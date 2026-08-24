@@ -326,6 +326,12 @@ ul { padding: 0; margin: 0; list-style: none; }
   gap: 26px;
   margin-top: 40px;
 }
+.cards-3.cards-2 {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .card {
   background: var(--white);
@@ -393,6 +399,12 @@ ul { padding: 0; margin: 0; list-style: none; }
   white-space: nowrap;
 }
 
+.callout-tarif {
+  background: var(--terracotta);
+  margin-top: 26px;
+}
+.callout-tarif .callout-badge { background: rgba(255,255,255,0.22); }
+
 /* ---------- Public grid ---------- */
 .public-grid {
   display: grid;
@@ -431,6 +443,7 @@ ul { padding: 0; margin: 0; list-style: none; }
   color: var(--terracotta-dark);
 }
 .info-strip-item span { color: var(--ink-soft); font-size: 0.95rem; }
+.info-strip.info-strip-single { grid-template-columns: 1fr; max-width: 420px; }
 
 /* ---------- Check list ---------- */
 .check-list { margin: 28px 0; }
